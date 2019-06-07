@@ -1,0 +1,22 @@
+#RequireAdmin
+
+Run("setup.exe")
+WinWait("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "Cancel")
+Sleep(300)
+ControlSend("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "&Next >" , "Button1" , "!n")
+WinWait("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "I &accept the terms in the license agreement")
+Sleep(300)
+ControlSend("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "I &accept the terms in the license agreement" , "Button3" , "!a")
+WinWait("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "License Agreement")
+Sleep(300)
+ControlSend("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "&Next >" , "Button5" , "!n")
+WinWait("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "Destination Folder")
+Sleep(300)
+ControlSend("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "&Next >" , "Button1" , "!n")
+WinWait("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "Ready to Install the Program")
+Sleep(300)
+ControlSend("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "&Install" , "Button1" , "!i")
+WinWait("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "&Finish")
+Sleep(300)
+ControlSend("Mavis Beacon Platinum - 25th Anniv. Ed. - InstallShield Wizard" , "&Finish" , "Button1" , "!f")
+Exit
