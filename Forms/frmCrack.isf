@@ -1,0 +1,286 @@
+; -- Created with ISN Form Studio 2 for ISN AutoIt Studio -- ;
+#include <StaticConstants.au3>
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+#Include <GuiButton.au3>
+#include <EditConstants.au3>
+
+$frmCrack = GUICreate("Software Installer",504,211,-1,-1,-1,-1)
+$btndotnet4 = GUICtrlCreateButton(".Net 4.5",22,18,102,25,-1,-1)
+GUICtrlSetOnEvent(-1,"_dotnet4")
+$btnjrt = GUICtrlCreateButton("JavaRunTime",138,18,102,25,-1,-1)
+GUICtrlSetOnEvent(-1,"_jre")
+$btnmkdir = GUICtrlCreateButton("Create Folder",249,18,102,25,-1,-1)
+GUICtrlSetOnEvent(-1,"_mkdir")
+$btnXiliKey = GUICtrlCreateButton("Xilisoft Key",22,52,102,25,-1,-1)
+GUICtrlSetOnEvent(-1,"_xiliKey")
+$btnpdvdpatch = GUICtrlCreateButton("PowerDVD Patch",138,52,102,25,-1,-1)
+GUICtrlSetOnEvent(-1,"_pdvdPatch")
+$btnFlash = GUICtrlCreateButton("Fonts",248,52,102,25,-1,-1)
+GUICtrlSetOnEvent(-1,"_fonts")
+$btnFolder = GUICtrlCreateButton("Create Folders",368,-32,102,25,-1,-1)
+GUICtrlSetOnEvent(-1,"_mkdir")
+$editLog = GUICtrlCreateEdit("",0,80,502,132,BitOr($ES_READONLY,$WS_VSCROLL,$WS_HSCROLL),-1)
+
+
+
+#cs
+[gui]
+Handle_deklaration=default
+Handle_deklaration_const=false
+title=Software Installer
+breite=504
+hoehe=211
+style=-1
+exstyle=-1
+bgcolour=0xF0F0F0
+bgimage=none
+handle=$frmCrack
+parent=
+code=
+codebeforegui=
+xpos=-1
+ypos=-1
+center_gui=true
+title_textmode=normal
+isf_include_once=false
+only_controls_in_isf=false
+const_modus=default
+gui_code_in_function=false
+gui_code_in_function_name=
+gui_event_close=
+gui_event_minimize=
+gui_event_restore=
+gui_event_maximize=
+gui_event_mousemove=
+gui_event_primarydown=
+gui_event_primaryup=
+gui_event_secoundarydown=
+gui_event_secoundaryup=
+gui_event_resized=
+gui_event_dropped=
+[0x00081ABE]
+handle=409
+locked=0
+resize=
+code=
+type=edit
+x=0
+y=80
+width=502
+height=132
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$ES_READONLY+$WS_VSCROLL+$WS_HSCROLL
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=$editLog
+func=
+bgimage=
+order=7
+tabpage=-1
+iconindex=
+textmode=text
+[0x00011AC0]
+handle=410
+locked=0
+resize=
+code=
+type=button
+x=22
+y=52
+width=102
+height=25
+text=Xilisoft Key
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=$btnXiliKey
+func=_xiliKey
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=3
+[0x00011AC4]
+handle=412
+locked=0
+resize=
+code=
+type=button
+x=368
+y=-32
+width=102
+height=25
+text=Create Folders
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=$btnFolder
+func=_mkdir
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=6
+[0x00011AC6]
+handle=413
+locked=0
+resize=
+code=
+type=button
+x=22
+y=18
+width=102
+height=25
+text=.Net 4.5
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=$btndotnet4
+func=_dotnet4
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=0
+[0x00011AC8]
+handle=414
+locked=0
+resize=
+code=
+type=button
+x=138
+y=52
+width=102
+height=25
+text=PowerDVD Patch
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=$btnpdvdpatch
+func=_pdvdPatch
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=4
+[0x00011ACA]
+handle=415
+locked=0
+resize=
+code=
+type=button
+x=138
+y=18
+width=102
+height=25
+text=JavaRunTime
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=$btnjrt
+func=_jre
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=1
+[0x00011ACC]
+handle=416
+locked=0
+resize=
+code=
+type=button
+x=248
+y=52
+width=102
+height=25
+text=Fonts
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=$btnFlash
+func=_fonts
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=5
+[0x00011ACE]
+handle=417
+locked=0
+resize=
+code=
+type=button
+x=249
+y=18
+width=102
+height=25
+text=Create Folder
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=$btnmkdir
+func=_mkdir
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=2
+#ce

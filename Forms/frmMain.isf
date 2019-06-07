@@ -1,0 +1,139 @@
+; -- Created with ISN Form Studio 2 for ISN AutoIt Studio -- ;
+#include <StaticConstants.au3>
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+#Include <GuiButton.au3>
+
+$frmMain = GUICreate("Software Installer",530,289,-1,-1,-1,$WS_EX_TRANSPARENT)
+GUISetBkColor(0xFFFFFF,$frmMain)
+GUISetIcon("Images\main.ico")
+$btnNext = GUICtrlCreateButton("Next",410,240,100,30,-1,-1)
+GUICtrlSetOnEvent(-1,"_FormInstall")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreatePic(@scriptdir&"\"&"Images\rubix cube stencil.jpg",190,31,154,144,-1,-1)
+GUICtrlCreateLabel("Developed by Phyo Thiha Oo",9,258,200,27,-1,-1)
+GUICtrlSetFont(-1,11,700,0,"Comic Sans MS")
+GUICtrlSetBkColor(-1,"-2")
+
+
+
+#cs
+[gui]
+Handle_deklaration=default
+Handle_deklaration_const=false
+title=Software Installer
+breite=530
+hoehe=289
+style=-1
+exstyle=$WS_EX_TRANSPARENT
+bgcolour=0xFFFFFF
+bgimage=none
+handle=$frmMain
+parent=
+code=GUISetIcon("Images\main.ico")
+codebeforegui=
+xpos=-1
+ypos=-1
+center_gui=true
+title_textmode=normal
+isf_include_once=false
+only_controls_in_isf=false
+const_modus=default
+gui_code_in_function=false
+gui_code_in_function_name=
+gui_event_close=
+gui_event_minimize=
+gui_event_restore=
+gui_event_maximize=
+gui_event_mousemove=
+gui_event_primarydown=
+gui_event_primaryup=
+gui_event_secoundarydown=
+gui_event_secoundaryup=
+gui_event_resized=
+gui_event_dropped=
+[0x0008235A]
+handle=409
+locked=0
+resize=
+code=
+type=button
+x=410
+y=240
+width=100
+height=30
+text=Next
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=-2
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=$btnNext
+func=_FormInstall
+bgimage=
+order=0
+tabpage=-1
+iconindex=
+textmode=text
+[0x0001235C]
+handle=410
+locked=0
+resize=
+code=
+type=label
+x=9
+y=258
+width=200
+height=27
+text=Developed by Phyo Thiha Oo
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=-2
+font=Comic Sans MS
+fontsize=11
+fontstyle=700
+fontattribute=0
+id=
+func=
+bgimage=
+order=3
+tabpage=-1
+iconindex=
+textmode=text
+[0x0001235E]
+handle=411
+locked=0
+resize=
+code=
+type=image
+x=190
+y=31
+width=154
+height=144
+tooltip=
+text=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=Images\rubix cube stencil.jpg
+order=3
+tabpage=-1
+iconindex=
+textmode=text
+#ce
