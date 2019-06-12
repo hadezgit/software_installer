@@ -1,19 +1,18 @@
 #RequireAdmin
-Run("FirefoxSetup.exe")
+Run("Firefox Setup 68.0b9.exe")
 
-WinWait("Mozilla Firefox Setup" , "Welcome to the Mozilla Firefox Setup Wizard")
-ControlSend("Mozilla Firefox Setup" , "&Next >" , "Button2" , "!n")
+WinWait("Mozilla Firefox Setup" , "&Next >")
 Sleep(300)
-WinWait("Mozilla Firefox Setup" , "Setup Type")
 ControlSend("Mozilla Firefox Setup" , "&Next >" , "Button2" , "!n")
+WinWait("Mozilla Firefox Setup" , "Choose setup options")
 Sleep(300)
+ControlSend("Mozilla Firefox Setup" , "&Next >" , "Button2" , "!n")
 WinWait("Mozilla Firefox Setup" , "Summary")
+Sleep(300)
 ControlSend("Mozilla Firefox Setup" , "&Install" , "Button2" , "!i")
-Sleep(300)
 WinWait("Mozilla Firefox Setup " , "&Finish")
+Sleep(300)
 ControlSend("Mozilla Firefox Setup " , "&Launch Firefox now" , "Button4" , "{SPACE}")
-Sleep(300)
-WinWait("Mozilla Firefox Setup " , "&Finish")
 ControlSend("Mozilla Firefox Setup " , "&Finish" , "Button2" , "!f")
-Sleep(300)
+
 Exit
