@@ -14,7 +14,7 @@ Sleep(300)
 ControlSend("WhizzoTypingTutor  Installation" , "Next >" , "obj_BUTTON13" , "{SPACE}")
 
 WinWait("WhizzoTypingTutor  Installation" , "Select additional shortcuts.")
-Sleep(300)
+Sleep(1000)
 ControlSend("WhizzoTypingTutor  Installation" , "Next >" , "obj_BUTTON13" , "{SPACE}")
 
 WinWait("WhizzoTypingTutor  Installation" , "Ready to Install")
