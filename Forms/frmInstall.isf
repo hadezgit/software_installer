@@ -12,8 +12,6 @@ $chPm1 = GUICtrlCreateCheckbox("PageMaker7.01",39,46,93,20,-1,-1)
 GUICtrlSetState(-1,BitOr($GUI_CHECKED,$GUI_SHOW,$GUI_ENABLE))
 $chFormatFactory = GUICtrlCreateCheckbox("FormatFactory",39,81,106,20,-1,-1)
 GUICtrlSetState(-1,BitOr($GUI_CHECKED,$GUI_SHOW,$GUI_ENABLE))
-$chXili = GUICtrlCreateCheckbox("Xilisoft Converter",39,98,99,20,-1,-1)
-GUICtrlSetState(-1,BitOr($GUI_CHECKED,$GUI_SHOW,$GUI_ENABLE))
 $chCambridge = GUICtrlCreateCheckbox("Cambridge",40,153,96,20,-1,-1)
 GUICtrlSetState(-1,BitOr($GUI_CHECKED,$GUI_SHOW,$GUI_ENABLE))
 $chAyar = GUICtrlCreateCheckbox("Ayar",40,171,96,20,-1,-1)
@@ -110,8 +108,10 @@ gui_event_secoundarydown=
 gui_event_secoundaryup=
 gui_event_resized=
 gui_event_dropped=
-[0x00081BA6]
-handle=409
+defaultfont=MS Sans Serif
+defaultfontsize=8
+[0x00061C06]
+handle=418
 locked=0
 resize=
 code=
@@ -131,43 +131,16 @@ font=MS Sans Serif
 fontsize=8
 fontstyle=400
 fontattribute=0
-id=chFormatFactory
+id=$chFormatFactory
 func=
 bgimage=
 order=2
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BA8]
-handle=410
-locked=0
-resize=
-code=
-type=checkbox
-x=39
-y=98
-width=99
-height=20
-text=Xilisoft Converter
-tooltip=
-state=$GUI_CHECKED+$GUI_SHOW+$GUI_ENABLE
-style=
-exstyle=
-textcolour=0x000000
-bgcolour=0xF0F0F0
-font=MS Sans Serif
-fontsize=8
-fontstyle=400
-fontattribute=0
-id=chXili
-func=
-bgimage=
-tabpage=-1
-iconindex=
-textmode=text
-order=3
-[0x00011BAA]
-handle=411
+iconlarge=0
+[0x0006047A]
+handle=420
 locked=0
 resize=
 code=
@@ -194,8 +167,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=5
-[0x00011BAC]
-handle=412
+[0x00041C0E]
+handle=421
 locked=0
 resize=
 code=
@@ -222,8 +195,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=8
-[0x00011BAE]
-handle=413
+[0x000704E0]
+handle=422
 locked=0
 resize=
 code=
@@ -250,8 +223,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=6
-[0x00011BB0]
-handle=414
+[0x00061BAC]
+handle=423
 locked=0
 resize=
 code=
@@ -278,8 +251,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=9
-[0x00011BB2]
-handle=415
+[0x00061BAA]
+handle=424
 locked=0
 resize=
 code=
@@ -306,8 +279,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=11
-[0x00011BB4]
-handle=416
+[0x000904FE]
+handle=425
 locked=0
 resize=
 code=
@@ -334,8 +307,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=18
-[0x00011BB6]
-handle=417
+[0x00061BA6]
+handle=426
 locked=0
 resize=
 code=
@@ -362,8 +335,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=16
-[0x00011BB8]
-handle=418
+[0x000A1ACC]
+handle=427
 locked=0
 resize=
 code=
@@ -390,8 +363,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=12
-[0x00011BBA]
-handle=419
+[0x00011C92]
+handle=428
 locked=0
 resize=
 code=
@@ -418,8 +391,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=19
-[0x00011BBC]
-handle=420
+[0x00011C94]
+handle=429
 locked=0
 resize=
 code=
@@ -446,8 +419,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=20
-[0x00011BBE]
-handle=421
+[0x00011C96]
+handle=430
 locked=0
 resize=
 code=
@@ -474,8 +447,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=21
-[0x00011BC0]
-handle=422
+[0x00011C98]
+handle=431
 locked=0
 resize=
 code=
@@ -502,8 +475,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=23
-[0x00011BC2]
-handle=423
+[0x00011C9A]
+handle=432
 locked=0
 resize=
 code=
@@ -530,8 +503,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=24
-[0x00011BC4]
-handle=424
+[0x00011C9C]
+handle=433
 locked=0
 resize=
 code=
@@ -558,8 +531,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=22
-[0x00011BC6]
-handle=425
+[0x00011C9E]
+handle=434
 locked=0
 resize=
 code=
@@ -586,8 +559,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=25
-[0x00011BC8]
-handle=426
+[0x00011CA0]
+handle=435
 locked=0
 resize=
 code=
@@ -614,8 +587,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=26
-[0x00011BCA]
-handle=427
+[0x00011CA2]
+handle=436
 locked=0
 resize=
 code=
@@ -642,8 +615,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=27
-[0x00011BCC]
-handle=428
+[0x00011CA4]
+handle=437
 locked=0
 resize=
 code=
@@ -670,8 +643,8 @@ order=34
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BCE]
-handle=429
+[0x00011CA6]
+handle=438
 locked=0
 resize=
 code=
@@ -698,8 +671,8 @@ order=32
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BD0]
-handle=430
+[0x00011CA8]
+handle=439
 locked=0
 resize=
 code=
@@ -726,8 +699,8 @@ order=0
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BD2]
-handle=431
+[0x00011CAA]
+handle=440
 locked=0
 resize=
 code=
@@ -747,15 +720,16 @@ font=MS Sans Serif
 fontsize=8
 fontstyle=400
 fontattribute=0
-id=chPm1
+id=$chPm1
 func=
 bgimage=
 order=1
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BD4]
-handle=432
+iconlarge=0
+[0x00011CAC]
+handle=441
 locked=0
 resize=
 code=
@@ -782,8 +756,8 @@ order=29
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BD6]
-handle=433
+[0x00011CAE]
+handle=442
 locked=0
 resize=
 code=
@@ -810,8 +784,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=31
-[0x00011BD8]
-handle=434
+[0x00011CB0]
+handle=443
 locked=0
 resize=
 code=
@@ -838,8 +812,8 @@ order=33
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BDA]
-handle=435
+[0x00011CB2]
+handle=444
 locked=0
 resize=
 code=
@@ -866,8 +840,8 @@ order=36
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BDC]
-handle=436
+[0x00011CB4]
+handle=445
 locked=0
 resize=
 code=
@@ -894,8 +868,8 @@ order=37
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BDE]
-handle=437
+[0x00011CB6]
+handle=446
 locked=0
 resize=
 code=
@@ -922,8 +896,8 @@ order=38
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BE0]
-handle=438
+[0x00011CB8]
+handle=447
 locked=0
 resize=
 code=
@@ -950,8 +924,8 @@ order=39
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011BE2]
-handle=439
+[0x00011CBA]
+handle=448
 locked=0
 resize=
 code=

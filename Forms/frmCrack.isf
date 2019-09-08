@@ -5,18 +5,14 @@
 #Include <GuiButton.au3>
 #include <EditConstants.au3>
 
-$frmCrack = GUICreate("Software Installer",504,211,-1,-1,-1,-1)
+$frmCrack = GUICreate("Software Installer",498,213,-1,-1,-1,-1)
 $btndotnet4 = GUICtrlCreateButton(".Net 4.5",22,18,102,25,-1,-1)
 GUICtrlSetOnEvent(-1,"_dotnet4")
 $btnjrt = GUICtrlCreateButton("JavaRunTime",138,18,102,25,-1,-1)
 GUICtrlSetOnEvent(-1,"_jre")
 $btnmkdir = GUICtrlCreateButton("Create Folder",249,18,102,25,-1,-1)
 GUICtrlSetOnEvent(-1,"_mkdir")
-$btnXiliKey = GUICtrlCreateButton("Xilisoft Key",22,52,102,25,-1,-1)
-GUICtrlSetOnEvent(-1,"_xiliKey")
-$btnpdvdpatch = GUICtrlCreateButton("PowerDVD Patch",138,52,102,25,-1,-1)
-GUICtrlSetOnEvent(-1,"_pdvdPatch")
-$btnFlash = GUICtrlCreateButton("Fonts",248,52,102,25,-1,-1)
+$btnFlash = GUICtrlCreateButton("Fonts",358,18,102,25,-1,-1)
 GUICtrlSetOnEvent(-1,"_fonts")
 $btnFolder = GUICtrlCreateButton("Create Folders",368,-32,102,25,-1,-1)
 GUICtrlSetOnEvent(-1,"_mkdir")
@@ -29,8 +25,8 @@ $editLog = GUICtrlCreateEdit("",0,80,502,132,BitOr($ES_READONLY,$WS_VSCROLL,$WS_
 Handle_deklaration=default
 Handle_deklaration_const=false
 title=Software Installer
-breite=504
-hoehe=211
+breite=498
+hoehe=213
 style=-1
 exstyle=-1
 bgcolour=0xF0F0F0
@@ -59,8 +55,10 @@ gui_event_secoundarydown=
 gui_event_secoundaryup=
 gui_event_resized=
 gui_event_dropped=
-[0x00081ABE]
-handle=409
+defaultfont=MS Sans Serif
+defaultfontsize=8
+[0x00082052]
+handle=418
 locked=0
 resize=
 code=
@@ -87,36 +85,8 @@ order=7
 tabpage=-1
 iconindex=
 textmode=text
-[0x00011AC0]
-handle=410
-locked=0
-resize=
-code=
-type=button
-x=22
-y=52
-width=102
-height=25
-text=Xilisoft Key
-tooltip=
-state=$GUI_SHOW+$GUI_ENABLE
-style=
-exstyle=
-textcolour=0x000000
-bgcolour=
-font=MS Sans Serif
-fontsize=8
-fontstyle=400
-fontattribute=0
-id=$btnXiliKey
-func=_xiliKey
-bgimage=
-tabpage=-1
-iconindex=
-textmode=text
-order=3
-[0x00011AC4]
-handle=412
+[0x00012060]
+handle=420
 locked=0
 resize=
 code=
@@ -143,8 +113,8 @@ tabpage=-1
 iconindex=
 textmode=text
 order=6
-[0x00011AC6]
-handle=413
+[0x00012062]
+handle=421
 locked=0
 resize=
 code=
@@ -171,36 +141,9 @@ tabpage=-1
 iconindex=
 textmode=text
 order=0
-[0x00011AC8]
-handle=414
-locked=0
-resize=
-code=
-type=button
-x=138
-y=52
-width=102
-height=25
-text=PowerDVD Patch
-tooltip=
-state=$GUI_SHOW+$GUI_ENABLE
-style=
-exstyle=
-textcolour=0x000000
-bgcolour=
-font=MS Sans Serif
-fontsize=8
-fontstyle=400
-fontattribute=0
-id=$btnpdvdpatch
-func=_pdvdPatch
-bgimage=
-tabpage=-1
-iconindex=
-textmode=text
-order=4
-[0x00011ACA]
-handle=415
+iconlarge=0
+[0x00012066]
+handle=423
 locked=0
 resize=
 code=
@@ -227,14 +170,14 @@ tabpage=-1
 iconindex=
 textmode=text
 order=1
-[0x00011ACC]
-handle=416
+[0x00012068]
+handle=424
 locked=0
 resize=
 code=
 type=button
-x=248
-y=52
+x=358
+y=18
 width=102
 height=25
 text=Fonts
@@ -255,8 +198,9 @@ tabpage=-1
 iconindex=
 textmode=text
 order=5
-[0x00011ACE]
-handle=417
+iconlarge=0
+[0x0001206A]
+handle=425
 locked=0
 resize=
 code=
@@ -283,4 +227,5 @@ tabpage=-1
 iconindex=
 textmode=text
 order=2
+iconlarge=0
 #ce

@@ -43,7 +43,7 @@ WEnd
 
 
 Func _AppInstall()
-	Global $app = $app_base
+	Local $app = $app_base
 	Local $load = $load_base	
 	Local $percent
 	
@@ -61,10 +61,6 @@ Func _AppInstall()
 	If GUICtrlRead($chFormatFactory) == 1 Then
 		_ArrayAdd($app, "ff", 0, "|", "", 6)
 		_ArrayAdd($load, "Format Factory", 0, "|", "", 6)
-	EndIf 
-	If GUICtrlRead($chXili) == 1 Then 
-		_ArrayAdd($app, "xili", 0, "|", "", 6)
-		_ArrayAdd($load, "Xilisoft Video Converter", 0, "|", "", 6)
 	EndIf 
 	If GUICtrlRead($chCambridge) == 1 Then 
 		_ArrayAdd($app, "cambridge", 0, "|", "", 6)
@@ -99,7 +95,7 @@ Func _AppInstall()
 		_ArrayAdd($load, "Wechat", 0, "|", "", 6)
 	EndIf 
 	If GUICtrlRead($chZapya) == 1 Then
-		_ArrayAdd($app, "zapya", 0, "|", "", 6)
+		_ArrayAdd($app, "zzapya", 0, "|", "", 6)
 		_ArrayAdd($load, "Zapya", 0, "|", "", 6)
 	EndIf 
 	If GUICtrlRead($chPdvd) == 1 Then 
@@ -183,7 +179,6 @@ Func _SelectAll()
 	Local $check = GUICtrlRead($chSelect)
 	if $check == 4 Then		
 		GUICtrlSetState($chFormatFactory, 4)
-		GUICtrlSetState($chXili, 4)
 		GUICtrlSetState($chCambridge, 4)
 		GUICtrlSetState($chE2m, 4)
 		GUICtrlSetState($chAyar, 4)
@@ -213,7 +208,6 @@ Func _SelectAll()
 		GUICtrlSetState($chrar, 4)		
 		Else
 			GUICtrlSetState($chFormatFactory, 1)
-			GUICtrlSetState($chXili, 1)
 			GUICtrlSetState($chCambridge, 1)
 			GUICtrlSetState($chE2m, 1)
 			GUICtrlSetState($chAyar, 1)
@@ -251,10 +245,6 @@ EndFunc
 
 #Region crack
 
-Func _idmcrack()
-	Run("explorer.exe Data\idm")
-EndFunc
-
 Func _sxs()
 	Run("Data\sxs\sxs.bat")
 EndFunc
@@ -264,18 +254,9 @@ Func _fonts()
 EndFunc
 
 
-Func _xiliKey()
-	$xilikey = "A738-C6C7-97E0-0291-445E-816A-EBA9-2047"
-	GUICtrlSetData($editLog, "Xilisoft Video Converter key " & @CRLF & $xilikey)
-EndFunc
-
 Func _mkdir()
 	Run("Data\mkdir.bat")
 	GUICtrlSetData($editLog, "Create Folder on Desktop : Completed")
-EndFunc
-
-Func _dotnetsxs()
-	Run("Data\sxs.bat")
 EndFunc
 
 Func _dotnet4()
@@ -286,9 +267,6 @@ Func _jre()
 	Run("Data\jre\jre.exe")
 EndFunc
 
-Func _pdvdPatch()
-	Run("explorer.exe Data\pdvd\Fix")	
-EndFunc
 
 
 #EndRegion
